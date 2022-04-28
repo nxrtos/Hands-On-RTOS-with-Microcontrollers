@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Chapter5_6</name>
+	<name>Chapters05_06_nucleo_f767zi_freeRTOS</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -71,22 +71,31 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>com.st.stm32cube.ide.mcu.MCUTSConvertedProjectNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUCubeIdeServicesRevAev2ProjectNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUCubeProjectNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCUSingleCpuProjectNature</nature>
+		<nature>com.st.stm32cube.ide.mcu.MCURootProjectNature</nature>
 	</natures>
 	<linkedResources>
 		<link>
-			<name>BSP</name>
+			<name>packs</name>
 			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/BSP</locationURI>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>Drivers</name>
+			<name>packs/BSP</name>
 			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Drivers</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/BSP</locationURI>
 		</link>
 		<link>
-			<name>Middleware</name>
+			<name>packs/Drivers</name>
 			<type>2</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Middleware</locationURI>
+			<locationURI>PARENT-3-PROJECT_LOC/Drivers</locationURI>
+		</link>
+		<link>
+			<name>packs/Middleware</name>
+			<type>2</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Middleware</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
