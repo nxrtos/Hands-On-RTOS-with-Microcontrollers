@@ -341,12 +341,11 @@ void lookBusy( void )
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
-  BSP_LED_Init(LED_GREEN);
   if (xTaskCreate(Task1, "task1", stackSize, NULL, tskIDLE_PRIORITY + 2, NULL) != pdPASS)
   {
 	while(1);
   }
-  if (0 && xTaskCreate(Task2, "task2", stackSize, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS)
+  if (xTaskCreate(Task2, "task2", stackSize, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS)
   {
 	while(1);
   }

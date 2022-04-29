@@ -50,8 +50,8 @@
 									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/FreeRTOS/Source/include"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
-									<listOptionValue builtIn="false" value="../../../../Middleware/Third_Party/SEGGER"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/BSP/STM32L4xx_Nucleo"/>
+									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/SEGGER"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.359086650" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -79,7 +79,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="packs"/>
+						<entry excluding="FreeRTOS/Source/portable/GCC/ARM_CM7" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="packs"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -130,8 +130,8 @@
 									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/FreeRTOS/Source/include"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2"/>
-									<listOptionValue builtIn="false" value="../../../../Middleware/Third_Party/SEGGER"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/BSP/STM32L4xx_Nucleo"/>
+									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/SEGGER"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.395816914" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -159,7 +159,7 @@
 					</folderInfo>
 					<sourceEntries>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
-						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="packs"/>
+						<entry excluding="FreeRTOS/Source/portable/GCC/ARM_CM7" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="packs"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -181,4 +181,5 @@
 		</scannerConfigBuildInfo>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope"/>
 </cproject>
