@@ -49,6 +49,7 @@
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/CMSIS/Device/ST/STM32F0xx/Include"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/BSP/STM32F051_Discovery"/>
+									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/SEGGER"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1379957459" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -126,6 +127,7 @@
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/CMSIS/Device/ST/STM32F0xx/Include"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../../../../packs/Drivers/BSP/STM32F051_Discovery"/>
+									<listOptionValue builtIn="false" value="../../../../packs/Middlewares/Third_Party/SEGGER"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.688449999" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>

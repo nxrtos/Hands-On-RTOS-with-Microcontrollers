@@ -36,6 +36,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>packs/CMSIS</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>packs/FreeRTOS</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -54,6 +59,16 @@
 			<name>packs/STM32F0xx_HAL_Driver</name>
 			<type>2</type>
 			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/packs/Drivers/STM32F0xx_HAL_Driver</locationURI>
+		</link>
+		<link>
+			<name>packs/CMSIS/Device</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>packs/CMSIS/Include</name>
+			<type>2</type>
+			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/packs/Drivers/CMSIS/Include</locationURI>
 		</link>
 		<link>
 			<name>packs/FreeRTOS/CMSIS_RTOS_V2</name>
@@ -101,6 +116,11 @@
 			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/packs/Middlewares/Third_Party/FreeRTOS/Source/timers.c</locationURI>
 		</link>
 		<link>
+			<name>packs/CMSIS/Device/ST</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>packs/FreeRTOS/portable/GCC</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -109,6 +129,11 @@
 			<name>packs/FreeRTOS/portable/MemMang</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>packs/CMSIS/Device/ST/STM32F0xx</name>
+			<type>2</type>
+			<locationURI>$%7BPARENT-3-PROJECT_LOC%7D/packs/Drivers/CMSIS/Device/ST/STM32F0xx</locationURI>
 		</link>
 		<link>
 			<name>packs/FreeRTOS/portable/GCC/ARM_CM0</name>
