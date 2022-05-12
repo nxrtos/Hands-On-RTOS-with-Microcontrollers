@@ -31,9 +31,24 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>docs</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>packs</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>docs/app_three_led_tasks_readme.md</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/app_three_led_tasks_readme.md</locationURI>
+		</link>
+		<link>
+			<name>docs/xTaskCreate.md</name>
+			<type>1</type>
+			<locationURI>$%7BPARENT-2-PROJECT_LOC%7D/xTaskCreate.md</locationURI>
 		</link>
 		<link>
 			<name>packs/CMSIS</name>

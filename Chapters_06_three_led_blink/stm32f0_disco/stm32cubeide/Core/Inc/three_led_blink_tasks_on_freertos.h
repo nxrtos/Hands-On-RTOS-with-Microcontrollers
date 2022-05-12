@@ -8,8 +8,8 @@
   ******************************************************************************
   */
 
-#ifndef THREE_LED_BLINK_TASKS_H
-#define THREE_LED_BLINK_TASKS_H
+#ifndef THREE_LED_BLINK_TASKS_ON_FREERTOS_H
+#define THREE_LED_BLINK_TASKS_ON_FREERTOS_H
 
 #include "bsp.h"
 #include "cmsis_os.h"
@@ -25,5 +25,6 @@ void Task1(void *argument);
 void Task2( void* argument);
 void Task3( void* argument);
 void lookBusy( void );
+void start_three_led_blink_tasks(void);
 
 #endif

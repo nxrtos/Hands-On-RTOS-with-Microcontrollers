@@ -215,7 +215,7 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-#include "three_led_blink_tasks.h"
+#include "three_led_blink_tasks_on_freertos.h"
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -228,19 +228,7 @@ static void MX_GPIO_Init(void)
 void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN 5 */
-  if (xTaskCreate(Task1, "task1", BlinkTask1StackSize, NULL, tskIDLE_PRIORITY + 2, NULL) != pdPASS)
-  {
-	while(1);
-  }
-  if (xTaskCreate(Task2, "task2", BlinkTask2StackSize, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS)
-  {
-	while(1);
-  }
-  if (xTaskCreate(Task3, "task3", BlinkTask3StackSize, NULL, tskIDLE_PRIORITY + 1, NULL) != pdPASS)
-  {
-	while(1);
-  }
-
+  start_three_led_blink_tasks();
   /* Infinite loop */
   for(;;)
   {
