@@ -17,9 +17,9 @@
 //#include <SEGGER_SYSVIEW.h>
 #define  SEGGER_SYSVIEW_PrintfHost
 
-#define  BlinkTask1StackSize  128
-#define  BlinkTask2StackSize  128
-#define  BlinkTask3StackSize  128
+#define  BlinkTask1StackSize  0x80
+#define  BlinkTask2StackSize  0x90
+#define  BlinkTask3StackSize  0xA0
 
 void Task1(void *argument);
 void Task2( void* argument);

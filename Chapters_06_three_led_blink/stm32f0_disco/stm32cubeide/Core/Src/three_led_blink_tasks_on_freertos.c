@@ -15,10 +15,10 @@
 
 void Task1(void *argument)
 {
-  int  local_array[10];
+//  int  local_array[10];
 
-  SEGGER_SYSVIEW_PrintfHost("local location %d\n", local_array);
-  SEGGER_SYSVIEW_PrintfHost("local location %d\n", &local_array[9]);
+//  SEGGER_SYSVIEW_PrintfHost("local location %d\n", local_array);
+//  SEGGER_SYSVIEW_PrintfHost("local location %d\n", &local_array[9]);
 
   BSP_LED_Init(LED_GREEN);
   BSP_LED_Off(LED_GREEN);
@@ -38,10 +38,10 @@ void Task1(void *argument)
 
 void Task2( void* argument )
 {
-  int  local_array[10];
+//  int  local_array[10];
 
-  SEGGER_SYSVIEW_PrintfHost("local location %d\n", local_array);
-  SEGGER_SYSVIEW_PrintfHost("local location %d\n", &local_array[9]);
+//  SEGGER_SYSVIEW_PrintfHost("local location %d\n", local_array);
+//  SEGGER_SYSVIEW_PrintfHost("local location %d\n", &local_array[9]);
 
   BSP_LED_Init(LED_BLUE);
   BSP_LED_Off(LED_BLUE);
@@ -61,10 +61,10 @@ void Task2( void* argument )
 
 void Task3( void* argument )
 {
-  int  local_array[10];
+//  int  local_array[10];
 
-  SEGGER_SYSVIEW_PrintfHost("local location %d\n", local_array);
-  SEGGER_SYSVIEW_PrintfHost("local location %d\n", &local_array[9]);
+//  SEGGER_SYSVIEW_PrintfHost("local location %d\n", local_array);
+//  SEGGER_SYSVIEW_PrintfHost("local location %d\n", &local_array[9]);
 
   BSP_LED_Init(LED_RED);
   BSP_LED_Off(LED_RED);
