@@ -10,8 +10,6 @@ The memory pool used for FreeRTOS kernel to allocate RAM space for task's stack 
 
 The size is defined by configTOTAL_HEAP_SIZE given in FreeRTOSConfig.h,  in this specific 3072=0xc00 .
 
-DefaultTask's Stack caught at 0x20000f50, ucHeap+496 , started at  0x20000f60 = 0x20000f50 + 0x10, back up to ucHeap (0x20000d60) , total size 0x80 * 4 Bytes. Space 0x20000f60 to 0x20000Fd0, size up to  0x70, seems used for DefaultTask's TCB. 
-
 Task1's Stack caught at 0x200011c0, ucHeap+1120, started at  0x200011d0 = 0x200011c0 + 0x10, back to  0x200011d0 - 0x200 = 0x20000Fd0 , total size 0x80 * 4 Bytes .  Space 0x200011d0 to 0x20001240, size up to  0x70, seems used for Task1's TCB. 
 
 Task2's Stack caught at 0x20001470, ucHeap+1808, started at  0x20001480 = 0x20001470 + 0x10, back to 0x20001480 - 0x240 = 0x20001240.  total size 0x240 = 0x90 * 4 Bytes. Space 0x20001480 to 0x200014F0, size up to  0x70, seems used for Task2's TCB. 
@@ -20,7 +18,13 @@ Task3's Stack caught at 0x20001760, ucHeap+2560, started at 0x20001770 = 0x20001
 
 Idle_Stack started at 0x0000000020000098, size 0x200 Byte, is not from ucHeap. 
 
+## DefaultTask's Stack Space
+DefaultTask's Stack caught at 0x20000f50, ucHeap+496 , started at  0x20000f60 = 0x20000f50 + 0x10, back up to ucHeap (0x20000d60) , total size 0x80 * 4 Bytes. Space 0x20000f60 to 0x20000Fd0, size up to  0x70, seems used for DefaultTask's TCB. 
 
+## ISR Stack Space
+msp has been set to 0x20002000, and updated to 0x20001ff8 when entered main(), and evolved to 0x20001fb0 while osKernelStart();
+It falls into bare metal pre-rtos stack region. 
+Because osKernelStart(); will not to return to mail(), as so the initial ISR_Stack_Point can be reset to 0x20002000 to preserve maximum RAM space.
 
 ## generic global or static data 
 
