@@ -14,8 +14,7 @@
 #include "bsp.h"
 #include "cmsis_os.h"
 
-//#include <SEGGER_SYSVIEW.h>
-#define  SEGGER_SYSVIEW_PrintfHost
+#include <SEGGER_SYSVIEW.h>
 
 #define  BlinkTask1StackSize  0x80
 #define  BlinkTask2StackSize  0x90
